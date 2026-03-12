@@ -1,4 +1,6 @@
-# Brown Dust 2 Automation Tool
+# Brown Dust 2 Automation Tool ⭐
+
+[![GitHub Stars](https://img.shields.io/github/stars/XiaoYiWeio/openclaw-skill-brown-dust-2)](https://github.com/XiaoYiWeio/openclaw-skill-brown-dust-2)
 
 An OpenClaw Skill to help Brown Dust 2 players automate daily sign-in and gift code redemption.
 
