@@ -1,70 +1,70 @@
-# Brown Dust 2 自动化工具
+# Brown Dust 2 Automation Tool
 
-一个 OpenClaw Skill，帮助布朗Dust2玩家自动完成每日签到和兑换码兑换。
+An OpenClaw Skill to help Brown Dust 2 players automate daily sign-in and gift code redemption.
 
-## 功能
+## Features
 
-- ✅ 每日自动签到（网页商店）
-- ✅ 自动检查并兑换最新兑换码（BD2Pulse）
+- Daily automatic sign-in (Web Shop)
+- Automatically check and redeem latest gift codes (BD2Pulse)
 
-## 安装
+## Installation
 
-### 方式1：ClawHub（推荐）
+### Via ClawHub (Recommended)
 ```bash
-clawhub install browndust2
+clawhub install brown-dust-2
 ```
 
-### 方式2：手动安装
+### Manual Install
 ```bash
-git clone https://github.com/your-repo/openclaw-skill-browndust2.git ~/.openclaw/workspace/skills/browndust2
+git clone https://github.com/your-repo/openclaw-skill-brown-dust-2.git ~/.openclaw/workspace/skills/browndust2
 ```
 
-## 使用前准备
+## Prerequisites
 
-1. **打开浏览器登录一次**（仅首次）：
+1. **Login to Chrome once** (first time only):
    ```bash
-   browser start --profile openclaw
+   browser start --profile chrome
    ```
    
-2. 访问以下网址并登录：
-   - [网页商店](https://webshop.browndust2.global/CT/)
+2. Visit and login to:
+   - [Web Shop](https://webshop.browndust2.global/CT/)
    - [BD2Pulse](https://thebd2pulse.com/zh-CN/)
 
-3. 保持浏览器登录状态（不要清除缓存）
+3. Keep browser logged in (don't clear cache)
 
-## 使用方法
+## Usage
 
-### 签到
-让 Agent 执行：
-> 请帮我签到 Brown Dust 2
+### Sign-in
+Ask the Agent:
+> Please sign in to Brown Dust 2
 
-### 兑换兑换码
-让 Agent 执行：
-> 请帮我兑换 Brown Dust 2 兑换码，昵称是"你的游戏昵称"
+### Redeem Gift Codes
+Ask the Agent:
+> Please redeem Brown Dust 2 gift codes, nickname is "your game nickname"
 
-## 定时任务（可选）
+## Cron Jobs (Optional)
 
-如果需要每天自动执行，可以设置 Cron：
+To run automatically every day:
 
 ```bash
-# 每天早上8点签到
-openclaw cron add --name "BD2签到" --cron "0 8 * * *" --message "请帮我签到Brown Dust 2" --channel discord --to "你的ID" --expect-final
+# Sign-in at 8am daily
+openclaw cron add --name "BD2 Sign-in" --cron "0 8 * * *" --message "Please sign in to Brown Dust 2" --channel discord --to "your-id" --expect-final
 
-# 每天早上8点30兑换码
-openclaw cron add --name "BD2兑换码" --cron "30 8 * * *" --message "请帮我兑换Brown Dust 2兑换码，昵称是你的昵称" --channel discord --to "你的ID" --expect-final
+# Redeem codes at 8:30am daily
+openclaw cron add --name "BD2 Redeem" --cron "30 8 * * *" --message "Please redeem Brown Dust 2 gift codes, nickname is your nickname" --channel discord --to "your-id" --expect-final
 ```
 
-## 故障排除
+## Troubleshooting
 
-- **登录失效**：需要重新在浏览器登录
-- **兑换失败**：某些码可能已经兑换过，这是正常的
+- Login expired: Please login in browser again
+- Redemption failed: Some codes may already be redeemed, this is normal
 
-## 发布更新
+## Publish Update
 
 ```bash
 cd ~/.openclaw/workspace/skills/browndust2
 git add .
-git commit -m "更新说明"
+git commit -m "Update description"
 git push
 clawhub publish
 ```

@@ -1,55 +1,58 @@
-# Brown Dust 2 自动化工具
+---
+name: brown-dust-2
+description: Automate daily sign-in and gift code redemption for Brown Dust 2 game
+---
 
-布朗Dust2游戏自动化工具，支持每日签到和兑换码自动兑换。
+# Brown Dust 2 Automation Tool
 
-## 功能
+Automate daily sign-in and gift code redemption for Brown Dust 2 (Brown Dust 2) game.
 
-### 1. 每日签到 (signin)
-自动在官方网页商店完成每日签到，领取奖励。
+## Features
 
-### 2. 兑换码兑换 (redeem)
-从 BD2Pulse 获取最新兑换码，自动兑换可用奖励。
+### 1. Daily Sign-in (signin)
+Automatically sign in to the official web shop and claim daily rewards.
 
-## 前置要求
+### 2. Gift Code Redemption (redeem)
+Fetch latest gift codes from BD2Pulse and automatically redeem available rewards.
 
-1. **Chrome 登录一次**：首次使用需要在浏览器中登录以下网站：
-   - 网页商店：https://webshop.browndust2.global/CT/
-   - 兑换码网站：https://thebd2pulse.com/zh-CN/
+## Prerequisites
 
-2. **用户昵称**：兑换码功能需要提供游戏内昵称
+1. **Login to Chrome once**: First time use requires manual login to:
+   - Web Shop: https://webshop.browndust2.global/CT/
+   - Gift Code Site: https://thebd2pulse.com/zh-CN/
 
-3. **保持登录**：后续自动化需要在浏览器保持登录状态，如果缓存被清理会有提示
+2. **Game Nickname**: Gift code redemption requires your in-game nickname
 
-## 使用方法
+3. **Keep Login**: Subsequent automation requires browser to stay logged in. If cache is cleared, you'll be notified.
 
-### 签到
+## Usage
+
+### Sign-in
 ```
-请帮我签到 Brown Dust 2
+Please sign in to Brown Dust 2
 ```
-或
+or
 ```
-BD2签到
-```
-
-### 兑换兑换码
-```
-请帮我兑换 Brown Dust 2 兑换码，昵称是[你的昵称]
-```
-或
-```
-BD2兑换码 [昵称]
+BD2 signin
 ```
 
-## 注意事项
+### Redeem Gift Codes
+```
+Please redeem Brown Dust 2 gift codes, nickname is [your nickname]
+```
+or
+```
+BD2 redeem [nickname]
+```
 
-- 首次使用需要用户在浏览器中手动登录一次
-- 后续自动化任务需要在电脑保持登录状态
-- 如果提示"登录失效"或"需要重新登录"，请手动登录后再次尝试
-- 兑换码有过期时间，部分码可能已经兑换过
+## Notes
 
-## 故障排除
+- First use requires manual login in browser
+- Keep browser logged in for automation
+- If login fails, you'll be notified to login again
 
-如果自动化失败，可能是：
-1. 浏览器登录状态失效 → 手动重新登录
-2. 网站结构变化 → 可能需要更新自动化脚本
-3. 网络问题 → 检查网络连接
+## Troubleshooting
+
+- Login expired → Manually login again
+- Site structure changed → May need to update automation
+- Network issues → Check connection
