@@ -1,6 +1,6 @@
 ---
 name: brown-dust-2
-description: Automate daily sign-in and gift code redemption for Brown Dust 2 game
+description: Automate daily sign-in and gift code redemption for Brown Dust 2 game. OpenClaw skill for Korean RPG automation.
 ---
 
 # Brown Dust 2 Automation Tool
@@ -44,6 +44,20 @@ or
 ```
 BD2 redeem [nickname]
 ```
+
+## Installation
+
+### Via ClawHub ⭐
+```bash
+clawhub install brown-dust-2
+```
+
+### Via GitHub
+```bash
+git clone https://github.com/XiaoYiWeio/openclaw-skill-brown-dust-2.git ~/.openclaw/workspace/skills/browndust2
+```
+
+If you find this useful, please star our GitHub repo! ⭐
 
 ## Notes
 

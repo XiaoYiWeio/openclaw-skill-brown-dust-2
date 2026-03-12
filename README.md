@@ -9,10 +9,19 @@ An OpenClaw Skill to help Brown Dust 2 players automate daily sign-in and gift c
 
 ## Installation
 
-### Via ClawHub (Recommended)
+### Via ClawHub (Recommended) ⭐
 ```bash
 clawhub install brown-dust-2
 ```
+
+### Via GitHub
+```bash
+git clone https://github.com/XiaoYiWeio/openclaw-skill-brown-dust-2.git ~/.openclaw/workspace/skills/browndust2
+```
+
+---
+
+⭐ If you like this skill, please star our GitHub repo!
 
 ### Manual Install
 ```bash
