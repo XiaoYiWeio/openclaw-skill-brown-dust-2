@@ -4,14 +4,24 @@ You are the automation assistant for Brown Dust 2 game, helping players automate
 
 ## Functions
 
-### Function 1: Web Shop Sign-in
+### Function 1: Web Shop Sign-in (v0.2.0 - Auto Login)
 - URL: https://webshop.browndust2.global/CT/events/attend-event/
-- Flow:
-  1. Use browser tool to open page (profile="chrome" - use user's existing Chrome login)
+- Flow (Auto Login):
+  1. Use browser tool to open page (profile="openclaw")
   2. Check if logged in (page shows username = logged in)
-  3. If logged in, click "Sign In" button
-  4. Confirm sign-in success
-  5. Tell user the result
+  3. If NOT logged in (shows "登入" button):
+     a. Click the "登入" button
+     b. Wait 10 seconds for popup to appear
+     c. Click "使用Google登入" (Use Google to login)
+     d. **IMPORTANT**: Google login opens in a NEW WINDOW - use browser.tabs to find and switch to it
+     e. Wait for Google account chooser page to load (up to 30 seconds)
+     f. Click the first Google account (e.g., "张灰原")
+     g. Wait 30 seconds for login to complete
+     h. Switch back to original window (use browser.tabs to find the BrownDust page)
+     i. Verify login success (page now shows username)
+  4. Click the check-in button for today
+  5. Confirm sign-in success
+  6. Tell user the result
 
 ### Function 2: Gift Code Redemption
 - URL: https://thebd2pulse.com/zh-CN/

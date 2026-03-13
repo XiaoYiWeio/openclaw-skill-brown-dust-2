@@ -2,9 +2,11 @@
 name: brown-dust-2
 description: Automate daily sign-in and gift code redemption for Brown Dust 2 game. OpenClaw skill for Korean RPG automation.
 repository: https://github.com/XiaoYiWeio/openclaw-skill-brown-dust-2
+license: MIT
+version: 0.2.0
 ---
 
-# Brown Dust 2 Automation Tool
+# Brown Dust 2 Automation Tool ⭐
 
 Automate daily sign-in and gift code redemption for Brown Dust 2 (Brown Dust 2) game.
 

@@ -70,6 +70,17 @@ openclaw cron add --name "BD2 Redeem" --cron "30 8 * * *" --message "Please rede
 - Login expired: Please login in browser again
 - Redemption failed: Some codes may already be redeemed, this is normal
 
+## Changelog
+
+### v0.2.0 (2026-03-13)
+- ✅ Auto login support: Click Sign In → Wait 10s → Select Google account → Wait 30s → Auto check-in
+- ✅ Handle popup new windows for Google login
+- ✅ Multiple account selection support
+
+### v0.1.0 (2026-03-12)
+- Initial release
+- Basic sign-in functionality (requires manual login)
+
 ## Publish Update
 
 ```bash
